@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1724757059174-7
+      author: D
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - dropNotNullConstraint:
+            columnDataType: $\[string.type\](2147483647)
+            columnName: name
+            tableName: test_user
+
